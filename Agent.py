@@ -196,12 +196,12 @@ exp_replay = ExperienceReplay(max_memory=max_memory)
 epoch = 5000
 
 # train model on train environment which is household's historical data for May 1 - Oct 31 of 2015
-train_env = init_env('../hems/data/preprocessed_dataset_Summer2015.csv')
+train_env = init_env('../hems/data/preprocessed_dataset_Summer2015_3.csv')
 hist = train(model, train_env, epoch, verbose=0)
 print("Training finished")
 
 # test model on test environment which is household's historical data for May 1 - Oct 31 of 2016
-test_env = init_env('../hems/data/preprocessed_dataset_Summer2016.csv')
+test_env = init_env('../hems/data/preprocessed_dataset_Summer2016_3.csv')
 test(model, test_env)
 
 # To make sure training loss decreases in iteration

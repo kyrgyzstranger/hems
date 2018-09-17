@@ -5,7 +5,7 @@ from decimal import Decimal
 env = []
 incl_cols = [0, 2, 3, 4]
 
-csv_rfile = open('C:/Users/Nazgul/Documents/GitHub/hems/Use_Car_Gen_Summer2016.csv',)
+csv_rfile = open('C:/Users/Nazgul/Documents/GitHub/hems/data/Use_Car_Gen_Summer2016_3.csv',)
 csv_reader = csv.reader(csv_rfile, delimiter=',')
 next(csv_reader, None)
 #headers = list(next(csv_reader)[i] for i in incl_cols)
@@ -52,7 +52,7 @@ for i in range(0, len(env)):
     env[i].append(tou_price)
 
 print(env[1])  
-csv_wfile = open('C:/Users/Nazgul/Documents/GitHub/hems/preprocessed_dataset_Summer2016.csv', 'w', newline='')
+csv_wfile = open('C:/Users/Nazgul/Documents/GitHub/hems/data/preprocessed_dataset_Summer2016_3.csv', 'w', newline='')
 csv_writer = csv.writer(csv_wfile, delimiter=',')
 for row in env:
     csv_writer.writerow(row)
