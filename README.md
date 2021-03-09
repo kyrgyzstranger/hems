@@ -1,1 +1,1 @@
-This is a practical part of my Master's diploma work.
+This is a practical part of my graduate study project.
